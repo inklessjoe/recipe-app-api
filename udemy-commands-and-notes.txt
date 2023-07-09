@@ -1,0 +1,20 @@
+dckr_pat_W_aznWuq7999q932jzefFUap9dg
+1. Run docker login -u inklessjoe
+
+########################################
+
+docker build .
+
+########################################
+
+docker-compose run --rm app sh -c "flake8"
+docker-compose run --rm app sh -c "python manage.py test"
+
+########################################
+this is the django cli command for creating a new project:
+docker-compose run --rm app sh -c "django-admin startproject app ."
+
+########################################
+docker-compose up
+
+then open 127.0.0.1:8000
